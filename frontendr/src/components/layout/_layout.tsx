@@ -18,6 +18,7 @@ export const Layout = (props: PropsWithChildren<Props>) => {
         <title>{props.title}</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" ></link>
       </Head>
       <header>
         <Navbar transparent={true} />

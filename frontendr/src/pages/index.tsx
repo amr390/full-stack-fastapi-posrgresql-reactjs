@@ -1,8 +1,26 @@
-import type { NextPage } from 'next'
-import { Login } from '../components/login/Login'
+import { Layout } from '../components/layout/_layout'
+import { Hero } from '../components/landing/hero/Hero'
+import { Services } from '../components/landing/services/Services'
+import { Featured } from '../components/landing/featured/Featured'
+import { Team } from '../components/landing/team/Team'
+import { Finisher } from '../components/landing/finisher/Finisher'
+import { Contact } from '../components/landing/contact/Contact'
 
-const Home: NextPage = () => {
-  return <Login></Login>
-}
+const IndexPage = () => (
+  <Layout title='Home | Next.js + TypeScript Example'>
+    <Hero />
+    <Services />
+    <Featured />
+    <Team />
+    <Finisher />
+    <Contact />
+  </Layout>
+)
 
-export default Home
+export default IndexPage
+
+
+
+
+
+
