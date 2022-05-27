@@ -1,4 +1,4 @@
-import { Layout } from '../components/layout/_layout'
+import { Layout } from '../components/landing/_layout'
 import { Hero } from '../components/landing/hero/Hero'
 import { Services } from '../components/landing/services/Services'
 import { Featured } from '../components/landing/featured/Featured'
