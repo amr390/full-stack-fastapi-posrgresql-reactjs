@@ -1,26 +1,25 @@
-import { Layout } from '../../components/landing/_layout'
+import Image from 'next/image'
+import React from 'react'
 import { Hero } from '../../components/landing/hero/Hero'
-import { Services } from '../../components/landing/services/Services'
-import { Featured } from '../../components/landing/featured/Featured'
-import { Team } from '../../components/landing/team/Team'
-import { Finisher } from '../../components/landing/finisher/Finisher'
-import { Contact } from '../../components/landing/contact/Contact'
+import { Layout } from '../../components/verde/_layout'
 
-const IndexPage = () => (
-  <Layout title='Home | Next.js + TypeScript Example'>
-    <Hero />
-    <Services />
-    <Featured />
-    <Team />
-    <Finisher />
-    <Contact />
-  </Layout>
-)
+const IndexPage = () => {
+  return (
+    <Layout>
+      <section
+        className='flex flex-1 flex-col justify-center items-center'
+        style={{
+          minHeight: '25vh',
+        }}
+      >
+        <Image src='/img/Logo.svg' width='100' height='100' layout='fixed' />
+      </section>
+      <Hero />
+      {/* <section style={{ */}
+      {/*   minHeight: '50vh' */}
+      {/* }}>Section 2</section> */}
+    </Layout>
+  )
+}
 
 export default IndexPage
-
-
-
-
-
-
