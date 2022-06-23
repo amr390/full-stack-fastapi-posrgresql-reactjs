@@ -18,13 +18,11 @@ function Navbar(props: Props): ReactElement {
       <div className='container px-4 mx-auto flex flex-wrap items-center justify-between'>
         <div className='w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start'>
           <a
-            className={
-              (props.transparent ? 'text-white' : 'text-gray-800') +
-              ' title-lg font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase'
-            }
-            href='https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/presentation'
+            className= "text-gray-800 title-lg font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
+            
+            href='http://localhost:3000'
           >
-            Tailwind Starter Kit
+            Gestión de tareas 
           </a>
           <button
             className='cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none'
@@ -32,10 +30,7 @@ function Navbar(props: Props): ReactElement {
             onClick={() => setNavbarOpen(!navbarOpen)}
           >
             <i
-              className={
-                (props.transparent ? 'text-white' : 'text-gray-800') +
-                ' fas fa-bars'
-              }
+              className="text-gray-800 fas fa-bars"
             ></i>
           </button>
         </div>
