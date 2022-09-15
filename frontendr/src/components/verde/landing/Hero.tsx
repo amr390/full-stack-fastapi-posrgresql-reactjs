@@ -11,7 +11,7 @@ export const Hero = (props : {}) => {
 }
 
 
-const IoRecord = (props: {text: string }) => 
+const IoRecord = (props: {text: string, children} ) => 
   (
     <div className="flex flex-1 justify-evenly items-center pt-1">
       <div className="bg-gray-200 rounded-full h-14 w-14">{{children}}</div>
