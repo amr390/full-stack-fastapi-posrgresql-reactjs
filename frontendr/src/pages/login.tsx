@@ -1,5 +1,5 @@
-import FooterSmall from '../components/layout/FooterSmall'
-import Navbar from '../components/layout/Navbar'
+import FooterSmall from '@components/layout/FooterSmall'
+import Navbar from '@components/layout/Navbar'
 
 export default function Login() {
   return (
